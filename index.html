@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Trainer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav>
+      <div class="logo">FitLife</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#workouts">Workouts</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Transform Your Body, Transform Your Life</h1>
+      <p>Personal training programs tailored to your goals.</p>
+      <a href="#workouts" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="images/trainer.jpg" alt="Trainer photo">
+      <div>
+        <p>Hello! I’m Femi, a certified fitness trainer with 5+ years of experience helping people achieve their health and fitness goals. My mission is to make fitness simple, enjoyable, and sustainable for everyone.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORKOUT PLANS ===== -->
+  <section id="workouts">
+    <h2>Workout Plans</h2>
+    <div class="workout-grid">
+      <div class="workout-card">
+        <img src="images/beginner.jpg" alt="Beginner plan">
+        <h3>Beginner</h3>
+        <p>Perfect for newcomers to build consistency and form.</p>
+      </div>
+      <div class="workout-card">
+        <img src="images/intermediate.jpg" alt="Intermediate plan">
+        <h3>Intermediate</h3>
+        <p>Challenging routines to boost strength and stamina.</p>
+      </div>
+      <div class="workout-card">
+        <img src="images/advanced.jpg" alt="Advanced plan">
+        <h3>Advanced</h3>
+        <p>High-intensity training for peak performance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonials-container">
+      <div class="testimonial">
+        <p>"Femi helped me lose 20kg in 6 months! His plans are easy to follow and motivating."</p>
+        <h4>- Sarah M.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"I feel stronger and more confident than ever. Highly recommend!"</p>
+        <h4>- James P.</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Best trainer I’ve ever had. The workouts are fun and effective."</p>
+        <h4>- Emily R.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; <span id="year"></span> FitLife. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Auto-update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script>
+  const form = document.querySelector("form");
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // stop default email behavior
+    alert("✅ Thank you for your message! I’ll get back to you soon.");
+    form.reset(); // clears the form
+  });
+</script>
+
+</body>
+</html>
