@@ -209,3 +209,38 @@ footer {
   padding: 20px;
 }
 
+/* Mobile View */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .plans {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .plan {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+}
